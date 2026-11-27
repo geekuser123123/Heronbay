@@ -15,7 +15,7 @@
 export default {
   site: {
     url: 'https://heronbay.kevin-c4h.workers.dev', // no trailing slash — confirm after first Cloudflare deploy
-    googleSiteVerification: null, // Search Console HTML-tag "content" value
+    googleSiteVerification: 'sv9j7ozXcICpTthXGhecO4xri9gidiEBIvQADpSyijg', // Search Console HTML-tag "content" value
     locale: 'en_US',
     language: 'en-US',
   },
