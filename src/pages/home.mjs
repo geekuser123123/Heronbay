@@ -155,8 +155,8 @@ export default {
   <div class="container split">
     <div class="split__text">
       <p class="kicker">About Heronbay</p>
-      <h2 id="about-h">Named for the herons of Tampa Bay</h2>
-      <p class="lead">Great blue herons stand watch along the edges of Tampa Bay — patient, still, and unhurried as the tides come and go. Heronbay brings that same calm patience to your retirement plan: careful records, deadlines met, and straight answers whatever the weather.</p>
+      <h2 id="about-h">Calm water, sheltered harbor</h2>
+      <p class="lead">Tampa Bay is one of the great natural harbors on the Gulf — wide, sheltered water where boats can wait out a storm. Heronbay is built to be that kind of safe harbor for your retirement plan: a calm place to bring questions, careful records, deadlines met, and straight answers.</p>
       <p>We work with consultants, healthcare professionals, contractors, marine and tourism business owners, real estate investors and small firms across Tampa and Hillsborough County, with meetings at our office by appointment.</p>
       <ul class="standards">
         <li><strong>Clear scope.</strong> We agree up front what we handle and what stays with you and your provider.</li>
