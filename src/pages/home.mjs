@@ -6,18 +6,18 @@ const EDU = SERVICES.filter((s) => s.group === 'education');
 
 const faqs = [
   { q: 'What does Heronbay do?', a: '<p>Heronbay provides administrative support and education for Solo and self-directed 401(k) plans: setup alongside the provider you choose, plan records and year-end values, Form 5500-EZ preparation, and year-round help. You remain the plan sponsor and make every decision.</p>' },
-  { q: 'Where do we meet?', a: '<p>At the Heronbay office in Tampa, Monday through Friday, by appointment. If you’d rather talk first, we’re happy to start with a phone call.</p>' },
+  { q: 'Where do we meet?', a: '<p>At the Heronbay office at 2701 West Busch Boulevard in north Tampa, Monday through Friday, by appointment. If you’d rather talk first, we’re happy to start with a phone call.</p>' },
   { q: 'Do you pick or recommend investments?', a: '<p>No. Investment decisions are yours. We keep the plan’s paperwork in order and explain the rules that apply.</p>' },
   { q: 'Do you hold my retirement money?', a: '<p>No. Plan assets stay in accounts titled to your plan at the institutions you choose. We never hold, move or invest plan money.</p>' },
   { q: 'Who can open a Solo 401(k)?', a: '<p>Generally a business with self-employment or business income and no eligible employees besides the owners and their spouses. Sole proprietors, LLCs, partnerships and corporations can all qualify; hiring can change that.</p>' },
   { q: 'When is Form 5500-EZ required?', a: '<p>Generally for any year a one-participant plan’s total assets exceed $250,000 at year-end, and always in the plan’s final year. For calendar-year plans it’s generally due July 31, extendable with Form 5558.</p>' },
   { q: 'What can a self-directed 401(k) hold?', a: '<p>What the plan document permits and federal law doesn’t prohibit — commonly real estate, private loans, private company interests, qualifying bullion and public securities. Collectibles are out, and dealings with “disqualified persons” such as you or close family are prohibited.</p>' },
   { q: 'Is this investment, legal or tax advice?', a: '<p>No. It’s administrative support and general education. For individualized advice, consult a licensed financial professional, CPA or attorney — we’ll gladly coordinate with yours.</p>' },
-  { q: 'How do I get started?', a: cfg.form.webhookUrl ? `<p>${B.phone ? `Call ${phoneHtml()} or use` : 'Use'} the <a href="#contact">meeting request form</a> below.</p>` : `<p>Call ${phoneHtml()}, Monday through Friday, 9:00 AM to 5:00 PM. We’ll set a time to meet at our Tampa office. Details are in the <a href="#contact">contact section</a> below.</p>` },
+  { q: 'How do I get started?', a: cfg.form.webhookUrl ? `<p>${B.phone ? `Call ${phoneHtml()} or use` : 'Use'} the <a href="#contact">meeting request form</a> below.</p>` : `<p>Call ${phoneHtml()}, Monday through Friday, 9:00 AM to 5:00 PM. We’ll set a time to meet at our Busch Boulevard office. Details are in the <a href="#contact">contact section</a> below.</p>` },
 ];
 
 const STEPS = [
-  ['Book a visit', 'Call or send the form, and we’ll set a time at our office — or start with a short phone call.'],
+  ['Book a visit', 'Call or send the form, and we’ll set a time at our Busch Boulevard office — or start with a short phone call.'],
   ['Chart it out together', 'We review your business, any existing plan, and where you’d like support.'],
   ['Agree the scope', 'In writing: what we handle, what your provider handles, and what stays with you.'],
   ['Set it up right', 'New plan: setup with your provider. Existing plan: records gathered and gaps closed.'],
@@ -48,7 +48,7 @@ export default {
     <div class="hero__copy">
       <p class="kicker kicker--light">Tampa, Florida · ${esc(B.tagline)}</p>
       <h1 id="hero-h">Smooth waters for your <em><span class="nw">self-directed</span> 401(k).</em></h1>
-      <p class="hero__lead">Heronbay helps Tampa Bay business owners and self-employed professionals set up and run Solo and self-directed 401(k) plans — careful records, Form 5500-EZ handled on schedule, and plain answers. Visit us at our Tampa office, by appointment.</p>
+      <p class="hero__lead">Heronbay helps Tampa Bay business owners and self-employed professionals set up and run Solo and self-directed 401(k) plans — careful records, Form 5500-EZ handled on schedule, and plain answers. Visit us at our office on Busch Boulevard in north Tampa.</p>
       <div class="btn-row">
         <a class="btn btn--accent btn--lg" href="#contact">Book an Office Visit</a>
         ${B.phone ? `<a class="btn btn--glass btn--lg" href="${phoneHref()}">${icon('phone')} ${esc(B.phone)}</a>` : `<a class="btn btn--glass btn--lg" href="#services">See services</a>`}
@@ -157,7 +157,7 @@ export default {
       <p class="kicker">About Heronbay</p>
       <h2 id="about-h">Calm water, sheltered harbor</h2>
       <p class="lead">Tampa Bay is one of the great natural harbors on the Gulf — wide, sheltered water where boats can wait out a storm. Heronbay is built to be that kind of safe harbor for your retirement plan: a calm place to bring questions, careful records, deadlines met, and straight answers.</p>
-      <p>We work with consultants, healthcare professionals, contractors, marine and tourism business owners, real estate investors and small firms across Tampa and Hillsborough County, with meetings at our office by appointment.</p>
+      <p>We work with consultants, healthcare professionals, contractors, marine and tourism business owners, real estate investors and small firms across Tampa and Hillsborough County, with meetings at our Busch Boulevard office by appointment.</p>
       <ul class="standards">
         <li><strong>Clear scope.</strong> We agree up front what we handle and what stays with you and your provider.</li>
         <li><strong>Your decisions stay yours.</strong> We aren’t a fiduciary, trustee, custodian, registered investment adviser or broker-dealer, and we don’t give legal or tax advice.</li>
@@ -168,11 +168,11 @@ export default {
   </div>
 </section>
 
-${ctaBand({ heading: 'Bring your plan questions to the office.', text: 'Book a visit with Heronbay in Tampa — new plan or existing one.', button: 'Book an Office Visit' })}
+${ctaBand({ heading: 'Bring your plan questions to Busch Boulevard.', text: 'Book a visit with Heronbay in Tampa — new plan or existing one.', button: 'Book an Office Visit' })}
 
 <section class="section" id="contact" aria-labelledby="contact-h">
   <div class="container">
-    <div class="head"><p class="kicker">Visit &amp; contact</p><h2 id="contact-h">Book an office visit</h2><p>${cfg.form.webhookUrl ? 'Send a few details and we’ll call to set a time at our Tampa office.' : 'Call us to set a time at our Tampa office. Meetings are by appointment, Monday through Friday.'}</p></div>
+    <div class="head"><p class="kicker">Visit &amp; contact</p><h2 id="contact-h">Book an office visit</h2><p>${cfg.form.webhookUrl ? 'Send a few details and we’ll call to set a time at our Busch Boulevard office.' : 'Call us to set a time at our Busch Boulevard office. Meetings are by appointment, Monday through Friday.'}</p></div>
   </div>
   ${contactBlock()}
 </section>

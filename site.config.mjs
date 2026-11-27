@@ -40,10 +40,10 @@ export default {
      */
     locationType: 'office',
     address: {
-      streetAddress: null, // TODO: full address to be provided
+      streetAddress: '2701 W Busch Blvd', // real, staffed office — add suite if any
       addressLocality: 'Tampa',
       addressRegion: 'FL',
-      postalCode: null,
+      postalCode: '33618',
       addressCountry: 'US',
     },
     geo: null, // real coordinates of the office only
